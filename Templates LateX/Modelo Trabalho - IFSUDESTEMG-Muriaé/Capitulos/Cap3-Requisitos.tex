@@ -1,0 +1,139 @@
+\chapter{Requisitos} \label{cap:requisitos}
+
+\dangersign[5ex]  {\color{red}
+Requisitos de Sistema:
+São mais técnicos e precisos.
+Escritos pelos desenvolvedores e equipe de projeto.
+Detalham como o sistema deve funcionar, incluindo aspectos técnicos, desempenho e restrições.
+Podem incluir requisitos de hardware, software, interfaces, segurança e integração com outros sistemas.
+São uma expansão dos requisitos de usuário, traduzindo-os para especificações técnicas.
+}
+
+
+\section{Requisitos Funcionais}
+
+\subsubsection*{RF01 - Registro de Usuários}
+\begin{itemize}
+    \item O sistema deve permitir que novos clientes se registrem fornecendo informações como nome, endereço de e-mail e senha.
+    \item A senha do usuário deve ser armazenada de forma segura utilizando técnicas de hash.
+    \item Deve ser possível para um restaurante se cadastrar, fornecendo informações como nome do estabelecimento, endereço, e dados de contato.
+\end{itemize}
+
+\subsubsection*{RF02 - Navegação de Restaurantes}
+\begin{itemize}
+    \item Os clientes devem poder visualizar a lista de restaurantes disponíveis.
+    \item Os restaurantes devem ser apresentados de forma ordenada e filtrável.
+\end{itemize}
+
+\subsubsection*{RF03 - Detalhes do Restaurante}
+\begin{itemize}
+    \item Os clientes podem acessar informações detalhadas sobre um restaurante específico, incluindo menu, avaliações e fotos.
+\end{itemize}
+
+\subsubsection*{RF04 - Pedido Online}
+\begin{itemize}
+    \item Os clientes devem poder fazer pedidos online, personalizando itens do menu.
+    \item O sistema deve calcular automaticamente o valor total do pedido.
+\end{itemize}
+
+\subsubsection*{RF05 - Confirmação Imediata}
+\begin{itemize}
+    \item Os restaurantes devem receber notificações imediatas sobre novos pedidos.
+\end{itemize}
+
+\subsubsection*{RF06 - Diversas Opções de Pagamento}
+\begin{itemize}
+    \item O sistema deve oferecer suporte a diversas formas de pagamento, incluindo cartões de crédito, débito e pagamento online.
+\end{itemize}
+
+\subsubsection*{RF07 - Notificações de Estoque e Promoções}
+\begin{itemize}
+    \item Restaurantes devem receber notificações sobre produtos em baixo estoque.
+    \item Clientes devem ser notificados sobre promoções especiais.
+\end{itemize}
+
+\subsubsection*{RF08 - Gestão Integrada}
+\begin{itemize}
+    \item Restaurantes devem ter acesso a um painel de controle para gerenciar estoque, cardápio, relatórios de vendas e usuários.
+    \item O sistema deve permitir o controle de clientes, histórico de pedidos, contas a pagar, contas a receber, entrada de produtos e gestão de usuários.
+\end{itemize}
+
+
+\section{Requisitos Não Funcionais}
+
+\subsubsection*{RNF01 - Segurança}
+\begin{itemize}
+    \item O sistema deve garantir a segurança das informações dos usuários, utilizando criptografia e práticas recomendadas.
+    \item A autenticação deve seguir padrões de segurança, como a não transmissão de senhas em texto claro.
+\end{itemize}
+
+\subsubsection*{RNF02 - Desempenho}
+\begin{itemize}
+    \item O sistema deve ser responsivo e eficiente, suportando um grande número de usuários simultâneos.
+    \item O tempo de resposta para ações do usuário não deve exceder 2 segundos.
+\end{itemize}
+
+\subsubsection*{RNF03 - Usabilidade}
+\begin{itemize}
+    \item A interface do usuário deve ser intuitiva e amigável, facilitando o uso por pessoas com diferentes níveis de habilidade.
+    \item O sistema deve ser acessível a usuários com deficiências visuais ou motoras.
+\end{itemize}
+
+\subsubsection*{RNF04 - Disponibilidade}
+\begin{itemize}
+    \item O sistema deve garantir alta disponibilidade, com tempo de inatividade programado não superior a 1\% do tempo total.
+    \item Deve ser implementado um plano de contingência para lidar com possíveis falhas de sistema.
+\end{itemize}
+
+\subsubsection*{RNF05 - Manutenibilidade}
+\begin{itemize}
+    \item O código fonte deve ser bem documentado para facilitar futuras manutenções.
+    \item Deve ser adotado um padrão de codificação para garantir a consistência e facilidade de leitura do código.
+\end{itemize}
+
+\subsubsection*{RNF06 - Integração}
+\begin{itemize}
+    \item O sistema deve ser capaz de integrar-se a sistemas de pagamento externos de forma segura e eficiente.
+    \item Deve ser possível integrar o sistema a serviços de entrega externos, se necessário.
+\end{itemize}
+
+\subsubsection*{RNF07 - Escalabilidade}
+\begin{itemize}
+    \item O sistema deve ser projetado para ser escalável, suportando o crescimento futuro do número de usuários e transações.
+    \item Deve ser possível adicionar novos recursos ou módulos sem afetar negativamente o desempenho global do sistema.
+\end{itemize}
+
+\subsubsection*{RNF08 - Internacionalização}
+\begin{itemize}
+    \item O sistema deve suportar múltiplos idiomas, permitindo a internacionalização para atender a diferentes regiões e culturas.
+\end{itemize}
+
+\subsubsection*{RNF09 - Privacidade}
+\begin{itemize}
+    \item O sistema deve cumprir as regulamentações de privacidade e proteção de dados vigentes, garantindo o tratamento adequado das informações pessoais dos usuários.
+\end{itemize}
+
+\section{Regras de Negócio}
+\begin{longtable}{|c|p{10cm}|}
+\hline
+\textbf{ID} & \textbf{Regra de Negócio} \\
+\hline
+RN01 & Clientes devem ter pelo menos 18 anos para se cadastrar no sistema. \\
+\hline
+RN02 & Um cliente não pode ter mais do que 20 itens no carrinho de compras. \\
+\hline
+RN03 & Pedidos só podem ser feitos durante o horário de funcionamento dos restaurantes, que é das 10:00 às 22:00. \\
+\hline
+RN04 & O valor mínimo para um pedido é de R\$ 20,00. \\
+\hline
+RN05 & Novos restaurantes só podem se cadastrar se tiverem uma avaliação média superior a 3 estrelas. \\
+\hline
+RN06 & Cada restaurante pode ter no máximo 3 promoções ativas ao mesmo tempo. \\
+\hline
+RN07 & Um cliente só pode tentar efetuar o pagamento do pedido no máximo 3 vezes. \\
+\hline
+RN08 & A entrega de pedidos só está disponível em um raio de até 10 km a partir do restaurante. \\
+\hline
+RN09 & Um carrinho de compras não finalizado será esvaziado automaticamente após 30 minutos de inatividade. \\
+\hline
+\end{longtable}

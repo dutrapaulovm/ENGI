@@ -1,0 +1,317 @@
+%------------------------------------------------------------
+%------------    Estrutura do texto   -----------------------         
+
+% Pacotes Básicos:
+%\usepackage{lmodern}			    % Usa a fonte Latin Modern			
+
+\usepackage[T1]{fontenc}		  % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{mathptmx,helvet,courier}
+
+%\usepackage{pslatex}                % Usa a fonte Times New Roman
+\usepackage{lastpage}			    % Usado pela Ficha catalográfica
+\usepackage{indentfirst}		  % Indenta o primeiro parágrafo de cada seção.
+\usepackage[table]{xcolor}
+\usepackage{color}				    % Controle das cores
+\usepackage{graphicx}			    % Inclusão de gráficos
+\usepackage{microtype} 		  	% para melhorias de justificação
+
+\usepackage{tablefootnote} % para colocar footnotes em tabelas e figuras
+
+% Pacotes Extras:
+\usepackage[final]{pdfpages}
+\usepackage{amsmath,amsthm}   %Símbolos Matemáticos
+\usepackage{indentfirst} % Indenta primeiro parágrafo 
+\usepackage[portuguese, ruled, linesnumbered,commentsnumbered, algo2e, vlined, lined, boxed, algochapter]{algorithm2e} % 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+\usepackage{hyperref}
+\usepackage{lineno,hyperref}
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibliograficas
+
+%\usepackage[num]{abntex2cite}	% Citações padrão ABNT númerico
+\usepackage[alf,abnt-emphasize=bf,abnt-full-initials=no,abnt-etal-list=5,abnt-etal-text=emph,abnt-repeated-author-omit=yes]{abntex2cite}
+%\usepackage[alf,abnt-emphasize=bf,abnt-etal-list=0,abnt-etal-text=emph]{abntex2cite}
+
+% se desejar justificar as referências (pela abnt é alinhado a esquerda)
+% \usepackage[alf,abnt-emphasize=bf,bibjustif]{abntex2cite}
+
+\usepackage{float} % para ajustar a posição das imagens
+
+\usepackage{tikzsymbols} %para caracteres emoji
+\usepackage{stackengine}
+\usepackage{scalerel}
+\usepackage{lscape}
+\newcommand\dangersign[1][2ex]{%
+  \renewcommand\stacktype{L}%
+  \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny\bfseries !}}{#1}%
+}
+
+\usepackage{etoolbox}
+%\usepackage[num]{abntex2cite}  % Citações numéricas
+
+\usepackage{lipsum}
+
+%para usar os algoritmos e matematica
+\newcommand{\var}{\texttt}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+
+
+% Defininfo Cores:
+\definecolor{blue}{RGB}{25,25,112}
+\definecolor{midgray}{gray}{.7}
+
+\makeatletter % informações do PDF
+\hypersetup{ % pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+    pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+	colorlinks=true,     % false: boxed links; true: colored links
+    linkcolor=black,          	% color of internal links
+    citecolor=black,        		% color of links to bibliography
+    filecolor=magenta,      	% color of file links
+    urlcolor=black,
+	bookmarksdepth=4 }
+\makeatother
+ 
+
+% -------------------------------------------- 
+% Espaçamentos entre linhas e parágrafos 
+\setlength{\parindent}{1.3cm} % O tamanho do parágrafo
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Definição de ambientes matemáticos em português 
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{axioma}{Axioma}[chapter]
+\newtheorem{corolario}{Corolário}[chapter]
+\newtheorem{lema}{Lema}[chapter]
+\newtheorem{proposicao}{Proposição}[chapter]
+\newtheorem{definicao}{Definição}[chapter]
+\newtheorem{exemplo}{Exemplo}[chapter]
+\newtheorem{observacao}{Observação}[chapter]
+
+% Novos Comandos
+\usepackage{tgtermes}
+\renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}
+
+
+\providecommand{\imprimirnomemes}{}
+\newcommand{\nomemes}[1]{\renewcommand{\imprimirnomemes}{#1}}
+
+% Variáveis adicionais
+\providecommand{\imprimirautorcite}{}
+\newcommand{\autorcite}[1]{\renewcommand{\imprimirautorcite}{#1}} 
+
+\providecommand{\imprimirsigla}{}
+\newcommand{\sigla}[1]{\renewcommand{\imprimirsigla}{#1}}
+
+\providecommand{\imprimircampus}{}
+\newcommand{\campus}[1]{\renewcommand{\imprimircampus}{#1}}
+
+\providecommand{\imprimiruf}{}
+\newcommand{\uf}[1]{\renewcommand{\imprimiruf}{#1}}
+\providecommand{\imprimircurso}{}
+\newcommand{\curso}[1]{\renewcommand{\imprimircurso}{#1}}
+\providecommand{\imprimirinstituto}{}
+\newcommand{\instituto}[1]{\renewcommand{\imprimirinstituto}{#1}}
+\providecommand{\imprimirdepartamento}{}
+\newcommand{\departamento}[1]{\renewcommand{\imprimirdepartamento}{#1}}
+\providecommand{\imprimirano}{}
+\newcommand{\ano}[1]{\renewcommand{\imprimirano}{#1}}
+\providecommand{\imprimirdia}{}
+\newcommand{\dia}[1]{\renewcommand{\imprimirdia}{#1}}
+\providecommand{\imprimirmes}{}
+\newcommand{\mes}[1]{\renewcommand{\imprimirmes}{#1}}
+\providecommand{\imprimirgrau}{}
+\newcommand{\grau}[1]{\renewcommand{\imprimirgrau}{#1}}
+\providecommand{\imprimirexaminadorum}{}
+\newcommand{\examinadorum}[1]{
+    \renewcommand{\imprimirexaminadorum}{#1}}
+\providecommand{\imprimirexaminadordois}{}
+\newcommand{\examinadordois}[1]{
+    \renewcommand{\imprimirexaminadordois}{#1}}
+\providecommand{\imprimirexaminadortres}{}
+\newcommand{\examinadortres}[1]{
+    \renewcommand{\imprimirexaminadortres}{#1}}
+\providecommand{\imprimirexaminadorquatro}{}
+\newcommand{\examinadorquatro}[1]{
+    \renewcommand{\imprimirexaminadorquatro}{#1}}
+\providecommand{\imprimirttorientador}{}
+\newcommand{\ttorientador}[1]{
+    \renewcommand{\imprimirttorientador}{#1}} 
+\providecommand{\imprimirttcoorientador}{}
+\newcommand{\ttcoorientador}[1]{
+    \renewcommand{\imprimirttcoorientador}{#1}}
+\providecommand{\imprimirttexaminadorum}{}
+\newcommand{\ttexaminadorum}[1]{
+    \renewcommand{\imprimirttexaminadorum}{#1}}
+\providecommand{\imprimirttexaminadordois}{}
+\newcommand{\ttexaminadordois}[1]{\renewcommand{
+        \imprimirttexaminadordois}{#1}}
+\providecommand{\imprimirttexaminadortres}{}
+\newcommand{\ttexaminadortres}[1]{
+    \renewcommand{\imprimirttexaminadortres}{#1}}
+\providecommand{\imprimirttexaminadorquatro}{}
+\newcommand{\ttexaminadorquatro}[1]{
+    \renewcommand{\imprimirttexaminadorquatro}{#1}}
+
+
+% Cria o comando \subtitulo. A norma define que o TITULO deve ser em caixa alta
+% negrito, mas o subtitulo deve ser em caixa baixa.
+\providecommand{\imprimirsubtitulo}{}
+\newcommand{\subtitulo}[1]{\renewcommand{\imprimirsubtitulo}{#1}}
+
+%----------------------------------------------------
+\renewcommand{\imprimircapa}{  % Capa 
+\begin{capa}
+%\begin{center}\includegraphics[scale=1]{Figuras/ifmg.png}\end{center}
+\begin{center}{
+             \large \MakeTextUppercase{\imprimirinstituicao} - \MakeTextUppercase{\imprimirinstituto} \\
+              %\imprimirdepartamento \\
+              \MakeTextUppercase{\imprimircurso} \\
+              \vspace{2cm}
+			  \large {\imprimirautor} 
+			  }\end{center}
+\vfill
+        \begin{center}
+        \MakeTextUppercase{\large \textbf{\imprimirtitulo}}  \\
+        \MakeTextLowercase{\textbf{\imprimirsubtitulo}}
+				\vspace{2cm}
+				%{\large \imprimirautor} 	
+				\vfill
+        {\large{\imprimirlocal~-~\imprimiruf \\ \imprimirano }}
+        \end{center}
+\end{capa}   } % Capa
+
+%----------------------------------------------------
+\renewcommand{\imprimirfolhaderosto}{% folha de rosto
+    \begin{center}
+    {{\MakeTextUppercase \imprimirautor}}  \\
+		\vfill
+		\large {\textbf{\MakeTextUppercase{\imprimirtitulo}}\\
+        \MakeTextLowercase{\textbf{\imprimirsubtitulo}}}
+    \end{center}
+    \vfill 
+    \begin{flushright} 
+    \parbox{0.6\linewidth}{
+		\imprimirtipotrabalho~apresentado ao \imprimirinstituto,~do \imprimirinstituicao,~como parte das exigências do curso de \imprimircurso~para a obtenção do título de \imprimirgrau. \\
+		\vfill
+		\textbf{\imprimirorientadorRotulo}~\imprimirorientador \\
+		\vfill 
+		\textbf{\imprimircoorientadorRotulo}~\imprimircoorientador}
+   \end{flushright} 
+   
+	 \vfill
+   \begin{center}
+   {\large{\imprimirlocal~- \imprimiruf \\ \imprimirano}}
+   \end{center} }  % folha de rosto
+
+%----------------------------------------------------
+
+
+%================================================================================
+% Pacotes de citações
+%================================================================================
+
+% Configurações do pacote backref
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\addto\captionsbrazil{% portugues-brasil
+    % Usado sem a opção hyperpageref de backref
+    %\renewcommand{\backrefpagesname}{Citado na(s) p{\'a}gina(s):~}
+    \renewcommand*{\backrefalt}[4]{
+    	\ifcase #1 %
+    		%Nenhuma cita{\c c}{\~a}o no texto.%
+    	\or
+    		%Citado na p{\'a}gina #2.%
+    	\else
+    		%Citado #1 vezes nas p{\'a}ginas #2.%
+    	\fi}%
+}
+\addto\captionsenglish{% ingles
+    % Usado sem a opção hyperpageref de backref
+    \renewcommand{\backrefpagesname}{Cited on page(s):~}
+    \renewcommand*{\backrefalt}[4]{
+    	\ifcase #1 %
+    		No citation.%
+    	\or
+    		Cited on page #2.%
+    	\else
+    		Cited #1 times on pages #2.%
+    	\fi}%
+}
+% ---
+\makeatletter
+\newcommand\thefontsize{Fonte tamanho: \f@size pt}
+\makeatother
+
+
+
+% para não deixar uma figura sozinha no centro de uma página,
+% mas no topo da página.
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\id}{\mathbf{1}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{{\cal V}}
+
+\usepackage{minted}
+\usepackage[portuguese, colorinlistoftodos, textsize=tiny]{todonotes}
+\usepackage{setspace}
+\usepackage{textcase}
+\usepackage{amsfonts}
+\usepackage{lscape}
+
+\usepackage{lineno,hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{bigstrut}
+\usepackage{bm}
+\usepackage{ragged2e} % Pacote para justificar o texto
+\usepackage{datetime}
+\usepackage{iflang}
+\usepackage{ifthen}
+\usepackage{xstring}
+\usepackage{etoolbox}
+\usepackage{atbegshi}
+\usepackage{fancyhdr}
+
+\usepackage{longtable}
+\usepackage{tabularx}
+
+
+\newcommand{\removeSpaces}[1]{%
+  \StrRemoveSpaces{#1}[\result]%
+  \result
+}
+
+\newcommand{\Nota}[1]{\todo[inline]{#1}}
+\newcommand{\NotaOK}[1]{\todo[inline]{Corrigido}}
+\newcommand{\rev}[1]{\textcolor{red}{\textbf #1}}
+
+
+
+%--

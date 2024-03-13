@@ -1,0 +1,117 @@
+\chapter{Resultados} \label{resultado}
+
+Neste capítulo são apresentados os resultados alcançados durante todo o trabalho, bem como uma discussão  e comparação com os resultados encontrados na literatura, destacando a importância desta pesquisa no contexto acadêmico.
+
+A Equação \ref{eq:importante}
+apresenta ....
+%
+\begin{equation}
+\label{eq:importante}
+    x^2      x^{2x} \cdot y + \vec{a}\times \vec{b} + \int_{a}^{b}x^3 dx = \xi_0 ,
+\end{equation}
+em que x é uma variável.
+
+Na Equação~\ref{eq:transformada} observa-se que ...
+%
+\begin{equation}
+\label{eq:transformada}
+\vec{z} = \begin{bmatrix}
+x_d 
+\\ 
+y_d 
+\end{bmatrix} = \begin{bmatrix}
+x_c + d\cos\theta
+\\ 
+y_c + d\sin\theta 
+\end{bmatrix},
+\end{equation}
+em que $d$ é a distância até o centro do objeto.
+
+Outro exemplo de expressão matemática:
+%
+\begin{equation}
+   3\mu_0 \cdot \left \{ \frac{2}{3} \cdot \vec{x}\times \vec{y} \right \} \\
+   \int_{x_1}^{x_2}hdx .
+\end{equation}
+
+Para as equações seguir também os modelos acima.
+
+\section{Algoritmos} 
+Códigos de programas geralmente não são consideradas como figuras, desta forma, não necessitam de possuir legenda. Por exemplo, o código a seguir mostra um trecho de uma programa em Python.
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=5pt,
+               gobble=2,
+               frame=lines,
+               framesep=2mm]{python}
+    print("Hello World")
+
+    for i in range(10):
+        print(i)
+\end{minted}
+
+Caso seja necessário considerar código como figuras, siga o exemplo da Figura~\ref{fig:codigo_python}.
+
+\begin{figure}[H] % h! para here, b para bottom e t para top
+\centering   
+\caption{Exemplo de código em Python.}    
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=5pt,
+               gobble=2,
+               frame=lines,
+               framesep=2mm]{python}
+    print("Hello World")
+
+    for i in range(10):
+        print(i)
+\end{minted}
+\label{fig:codigo_python}
+\end{figure}
+
+Algoritmos geralmente são apresentados como pseudo-códigos, os quais possuem uma formatação formal conhecida dos livros de computação. Diferentemente das listagens, os algoritmos costumam possuir legendas, como no algoritmo~\ref{alg:exemplo} abaixo.
+\begin{algorithm*}
+ \caption{Ler número e imprimir se é par ou não.}
+ \Entrada{número, ($numero$).}
+ \Saida{Se o número é par ou não}
+ \Inicio{
+     \textbf{ler} $numero$\;
+     \eSe {$numero \% 2 = 0$} {
+         \textbf{imprimir} $numero$, " par"\;
+     } {
+     \textbf{imprimir} $numero$, " impar"\;
+     }
+    }
+    \label{alg:exemplo}
+\end{algorithm*}
+
+\section{Notas de rodapé}
+
+Utilize as notas de rodapé\footnote{As notas devem ser alinhadas sendo que na segunda linha da mesma nota, a primeira letra deve estar abaixo da primeira letra da primeira palavra da linha superior, destacando assim o expoente.} para realizar esclarecimentos rápidos sobre algum conceito ou referência. Por exemplo, um endereço de uma página web. O IF Sudeste MG - Campus Muriaé\footnote{https://www.ifsudestemg.edu.br/muriae} é uma instituição.
+
+\section{Tabelas}
+Para criar uma tabela, siga o exemplo conforme da Tabela~\ref{tb:exemplo_tabela}.
+
+\begin{table}[!ht]
+     \caption{Exemplo tabela}\label{tb:exemplo_tabela}
+	\centering
+	{\footnotesize
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+        \textbf{Ordem} & \textbf{A} & \textbf{B} & \textbf{C} \\ \hline
+        1 & 1 & 1 & 1 \\ \hline
+        2 & 2 & 2 & 2 \\ \hline
+        3 & 3 & 3 & 3 \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Para facilitar a criação de tabelas em LateX, você pode utilizar os seguintes links: 
+\begin{itemize}
+\item \url{https://tableconvert.com/pt/latex-generator}
+\item \url{https://www.tablesgenerator.com/}
+\item \url{https://www.latex-tables.com/}
+\item \url{https://clevert.com.br/latex/latextable.php}
+\end{itemize}
+
+Caso utilize o Excel, você pode utilizar o seguinte suplemento para converter planilhas em tabelas no formato LateX: \href{https://www.ctan.org/tex-archive/support/excel2latex/}{https://www.ctan.org/tex-archive/support/excel2latex/}

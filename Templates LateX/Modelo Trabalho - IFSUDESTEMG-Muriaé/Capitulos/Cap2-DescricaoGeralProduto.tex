@@ -1,0 +1,266 @@
+\chapter{Descrição Geral do Produto} \label{cap:descricaogeral}
+
+\section{Descrição do Cliente}
+
+\dangersign[5ex]  {\color{red}
+Requisitos de Usuário:
+São requisitos de alto nível, escritos pelos próprios usuários.
+Normalmente, são expressos em linguagem natural e não entram em detalhes técnicos.
+Descrevem as necessidades e expectativas dos usuários em relação ao sistema.
+Exemplos incluem funcionalidades essenciais, usabilidade, segurança e requisitos de documentação.
+São a base para a definição dos requisitos de sistema.}
+
+Atualmente lido com pedidos usando papel ou uma planilha no Excel. Estou procurando uma solução melhor e pensei em um sistema de pedidos online.
+
+Quero algo fácil, onde clientes e meu restaurante possam se registrar rapidamente com seus dados pessoais.
+
+Quero que os clientes naveguem pelo sistema de forma simples, vendo detalhes sobre menus, avaliações e fotos dos restaurantes.
+
+Desejo que os clientes possam realizar seus pedidos online, ajustar itens, escolher entrega e adicionar observações. E os restaurantes precisam ser notificados rápido sobre novos pedidos.
+
+Em relação a pagamentos, aceitar cartões e oferecer opções online.
+
+Se houvesse um jeito de acompanhar pedidos online, seria perfeito, tanto para mim quanto para os restaurantes. Receber alertas sobre produtos quase acabando, isso ajudaria na gestão do estoque, e notificar clientes sobre promoções especiais seria uma vantagem.
+
+Gostaria também de gerenciar estoque, cardápio, usuários, clientes, histórico de pedidos, contas a pagar e receber e entrada de produtos
+
+ Aqui estão as principais funcionalidades desejadas para o sistema de pedidos online, com base nos requisitos do usuário:
+
+\begin{itemize}
+    \item \textbf{Registro Simplificado:} Permitir que clientes e restaurantes se registrem rapidamente, fornecendo apenas dados pessoais essenciais.
+    
+    \item \textbf{Navegação Intuitiva:} Facilitar a navegação dos clientes pelo sistema, permitindo que visualizem detalhes sobre menus, avaliações e fotos dos restaurantes de forma clara e organizada.
+    
+    \item \textbf{Realização de Pedidos Online:} Capacitar os clientes a fazerem pedidos de forma rápida e conveniente, com a possibilidade de ajustar itens, escolher opções de entrega e adicionar observações específicas.
+    
+    \item \textbf{Notificações Imediatas:} Garantir que os restaurantes sejam notificados instantaneamente sobre novos pedidos recebidos, permitindo uma resposta rápida e eficiente.
+    
+    \item \textbf{Opções de Pagamento Diversificadas:} Aceitar pagamentos via cartões de crédito e débito, além de oferecer opções de pagamento online para maior comodidade dos clientes.
+    
+    \item \textbf{Acompanhamento de Pedidos Online:} Implementar um sistema de acompanhamento de pedidos online para clientes e restaurantes, permitindo que ambos possam verificar o status atual dos pedidos em tempo real.
+    
+    \item \textbf{Alertas de Estoque:} Enviar alertas automáticos aos restaurantes sobre produtos com baixo estoque, auxiliando na gestão eficiente do estoque e evitando interrupções no atendimento.
+    
+    \item \textbf{Notificações de Promoções Especiais:} Enviar notificações aos clientes sobre promoções especiais, incentivando vendas adicionais e aumentando o engajamento.
+    
+    \item \textbf{Gestão Integrada:} Fornecer ferramentas abrangentes para gerenciar estoque, cardápio, usuários, clientes, histórico de pedidos, contas a pagar e receber, além de facilitar o processo de entrada de novos produtos no sistema.
+
+    \item \textbf{Segurança e Confidencialidade:} A segurança dos dados de nossos clientes é uma prioridade. Portanto, precisamos garantir que o sistema seja seguro e protegido contra acessos não autorizados.
+    
+\end{itemize}
+
+\section{Descrição Geral do Produto}
+
+\dangersign[5ex]  {\color{red} A Descrição Geral do Produto é um componente importante da documentação de requisitos de software. Ela fornece uma visão ampla e abrangente do produto que está sendo desenvolvido. Geralmente, inclui informações sobre a finalidade do produto, suas principais características e funcionalidades, o contexto em que será usado, os principais stakeholders envolvidos, requisitos de desempenho, restrições de hardware ou software, entre outros detalhes relevantes.
+
+Essa descrição serve como um ponto de referência para todos os envolvidos no desenvolvimento do produto, garantindo uma compreensão comum sobre o que está sendo criado e qual é o objetivo final. Além disso, ela ajuda a orientar o processo de desenvolvimento, facilitando a comunicação entre as equipes e garantindo que todas as partes interessadas tenham uma visão clara do produto desde o início do projeto.}
+
+
+O Sistema de Delivery, denominado iFoodClone, é uma plataforma inovadora projetada para facilitar a experiência de pedidos online, inspirada no iFood. Este sistema possui como objetivo proporcionar uma eficiente forma para clientes consultar restaurantes e realizar pedidos personalizados, e acompanharem o status de suas entregas.
+
+\subsection{Situação Atual da Empresa}
+
+A empresa enfrenta desafios significativos em seu processo de delivery de alimentos devido à ausência de um sistema dedicado. Abaixo estão os principais pontos que caracterizam a situação atual:
+
+\subsection*{\textit{Processo Manual}}
+
+\begin{itemize}
+    \item Registro manual de pedidos por telefone, levando a possíveis erros de comunicação.
+    \item Dependência de anotações físicas para gerenciamento de pedidos.
+    \item Processo demorado e suscetível a falhas humanas.
+\end{itemize}
+
+\subsection*{\textit{Limitações no Rastreamento de Pedidos}}
+
+\begin{itemize}
+    \item Falta de uma plataforma centralizada para rastreamento em tempo real.
+    \item Dificuldade em informar os clientes sobre o status exato de seus pedidos.
+    \item Possíveis atrasos na entrega devido à falta de visibilidade no processo.
+\end{itemize}
+
+\subsection*{\textit{Gestão de Estoque Manual}}
+
+\begin{itemize}
+    \item Controle de estoque realizado de forma manual.
+    \item Dificuldade em prever demanda e gerenciar níveis de estoque eficientemente.
+    \item Risco de falta de produtos essenciais e excesso de itens em estoque.
+\end{itemize}
+
+\subsection*{\textit{Limitação na Comunicação com Clientes}}
+
+\begin{itemize}
+    \item Comunicação limitada com os clientes, principalmente presencial ou por telefone.
+    \item Falta de uma plataforma online para consulta de cardápio, promoções e interação direta.
+    \item Oportunidades perdidas para atrair clientes por meio de estratégias digitais.
+\end{itemize}
+
+\subsection*{\textit{Análise e Relatórios Manuais}}
+
+\begin{itemize}
+    \item Ausência de ferramentas analíticas para análise de dados.
+    \item Dificuldade em gerar relatórios de vendas, avaliar desempenho e identificar tendências.
+    \item Tomada de decisões estratégicas prejudicada pela falta de informações detalhadas.
+\end{itemize}
+
+\subsection*{\textit{Implementação Limitada de Promoções}}
+
+\begin{itemize}
+    \item Desafios na implementação e gestão de promoções e descontos.
+    \item Falta de flexibilidade para atrair e reter clientes por meio de estratégias promocionais.
+    \item Potencial perda de competitividade no mercado devido a essa limitação.
+\end{itemize}
+
+\subsection*{\textit{Comunicação Desatualizada em Tempo Real}}
+
+\begin{itemize}
+    \item Falta de atualizações em tempo real para clientes e restaurantes parceiros.
+    \item Possibilidade de informações desatualizadas, causando desconforto e insatisfação.
+    \item Necessidade de melhorar a eficiência na comunicação para aprimorar a experiência do usuário.
+\end{itemize}
+
+\subsection{Escopo do Produto - Módulos e Funcionalidades}
+
+\dangersign[5ex]  {\color{red}
+O escopo refere-se ao conjunto de funcionalidades, características e requisitos que estão incluídos em um projeto ou atividade específica. Ele define os limites e a extensão do trabalho a ser realizado, delineando o que será entregue e o que não será. O escopo é crucial para garantir que todas as partes interessadas tenham uma compreensão clara do que será realizado durante o projeto e ajuda a evitar desvios e alterações desnecessárias ao longo do caminho.}
+
+Este documento descreve o escopo do produto para o sistema de pedidos estilo iFood, abrangendo as funcionalidades principais do aplicativo de pedidos para iOS e Android, a API REST de comunicação e o sistema de gestão de pedidos, bem com, suas funcionalidades associadas. O sistema visa proporcionar uma experiência completa para clientes e restaurantes, facilitando a realização e gerenciamento de pedidos online.
+
+\subsubsection*{Aplicativos de Pedidos para iOS e Android:}
+
+Os aplicativos serão desenvolvidos para as plataformas iOS e Android, permitindo que clientes realizem pedidos de forma intuitiva e personalizada. Além disso, oferecerão funcionalidades como registro, autenticação, criação de perfis, navegação por restaurantes, visualização detalhada de menus, realização de pedidos online e notificações em tempo real.
+\begin{center}
+\begin{longtable}{|p{4cm}|p{11cm}|}
+\hline
+\textbf{Funcionalidades} & \textbf{Descrição} \\
+\hline
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\tablename\ \thetable{} -- Continuação da Página Anterior}} \\
+\hline
+\textbf{Funcionalidades} & \textbf{Descrição} \\
+\hline
+\endhead
+
+Registro e autenticação de usuários (clientes e restaurantes) & Permite que usuários se cadastrem e acessem suas contas de forma segura. \\
+\hline
+Criação de perfis com detalhes adicionais & Oferece a personalização de perfis com informações como endereço e contato. \\
+\hline
+Navegação intuitiva por uma lista de restaurantes & Facilita a busca e seleção de restaurantes disponíveis. \\
+\hline
+Visualização detalhada de menus, avaliações e fotos & Fornecer informações detalhadas sobre os restaurantes para decisões informadas. \\
+\hline
+Realização de pedidos online com personalização & Permite que clientes personalizem seus pedidos e os realizem online. \\
+\hline
+Escolha de opções de entrega e adição de observações & Facilita a escolha de opções de entrega e a inclusão de observações especiais. \\
+\hline
+Notificações imediatas para restaurantes sobre novos pedidos & Garante que os restaurantes sejam alertados rapidamente sobre novos pedidos. \\
+\hline
+Suporte a diversas formas de pagamento & Aceitação de diferentes formas de pagamento, como cartões de crédito e débito. \\
+\hline
+Módulo web para acompanhamento de pedidos e histórico de transações & Acesso online para clientes acompanharem seus pedidos e visualizarem histórico de transações. \\
+\hline
+\caption{Funcionalidades do Aplicativo de Pedidos para iOS e Android.}
+\label{tab:app_pedidos}
+\end{longtable}
+\end{center}
+
+
+
+
+\subsubsection*{API REST de Comunicação}
+A API REST será responsável pela comunicação segura entre os aplicativos de pedidos e o sistema de gestão de pedidos. Ela gerenciará registros de usuários, receberá e processará novos pedidos, atualizará em tempo real o status dos pedidos e integrará formas de pagamento, utilizando o formato JSON para a transferência eficiente de dados.
+
+\begin{center}
+    
+
+\begin{longtable}{|p{4cm}|p{11cm}|}
+\hline
+\textbf{Funcionalidades} & \textbf{Descrição} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Funcionalidades} & \textbf{Descrição} \\
+\hline
+\endhead
+
+Comunicação segura entre aplicativos e o sistema de gestão & Estabelece uma comunicação segura para transmitir dados entre os aplicativos e o sistema de gestão. \\
+\hline
+Gerenciamento de registros de usuários & Responsável pelo cadastro, atualização e remoção de registros de usuários. \\
+\hline
+Recebimento e processamento de novos pedidos & Recebe e processa pedidos enviados pelos aplicativos de pedidos. \\
+\hline
+Atualização em tempo real do status dos pedidos & Mantém os aplicativos informados sobre o status atualizado dos pedidos. \\
+\hline
+Integração de formas de pagamento e confirmação de transações & Garante a integração bem-sucedida de diferentes formas de pagamento e confirmação de transações. \\
+\hline
+Transferência de dados no formato JSON & Utiliza o formato JSON para a transferência eficiente e estruturada de dados. \\
+\hline
+\caption{Funcionalidades da API REST de Comunicação.}
+\label{tab:api_rest}
+\end{longtable}
+\end{center}
+
+\subsubsection*{Sistema de Gestão de Pedidos}
+O sistema de gestão proporcionará um painel de controle intuitivo para restaurantes gerenciarem suas operações. Com funcionalidades como gerenciamento simplificado de estoque e cardápio, geração de relatórios de vendas e estatísticas, controle de clientes, histórico de pedidos e usuários, além de notificações sobre produtos em baixo estoque e envio de promoções especiais.
+
+\begin{center}
+    
+
+\begin{longtable}{|p{4cm}|p{10cm}|}
+\hline
+\textbf{Funcionalidades} & \textbf{Descrição} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Funcionalidades} & \textbf{Descrição} \\
+\hline
+\endhead
+
+Painel de controle intuitivo para restaurantes & Fornece um painel fácil de usar para restaurantes gerenciarem suas operações. \\
+\hline
+Gerenciamento simplificado de estoque e cardápio & Permite o controle eficiente de estoque e atualização do cardápio. \\
+\hline
+Relatórios de vendas e estatísticas & Gera relatórios detalhados de vendas e estatísticas para análise. \\
+\hline
+Controle de clientes, histórico de pedidos e usuários & Oferece ferramentas para gerenciar clientes, histórico de pedidos e usuários do sistema. \\
+\hline
+Notificações sobre produtos em baixo estoque para restaurantes & Alerta os restaurantes sobre produtos em baixo estoque para uma gestão proativa. \\
+\hline
+Envio de promoções especiais para clientes & Permite o envio de promoções especiais diretamente para os clientes. \\
+\hline
+\caption{Funcionalidades do Sistema de Gestão de Pedidos.}
+\label{tab:sis_gestao}
+\end{longtable}
+\end{center}
+
+\section{Premissas}
+
+\dangersign[5ex]  {\color{red}
+Uma premissa é uma afirmação ou proposição que serve como base para um argumento ou raciocínio. Em argumentos lógicos, as premissas são usadas para sustentar a conclusão.
+
+Na documentação de requisitos de software, uma premissa é uma declaração fundamental que estabelece uma condição ou suposição sobre o ambiente, as necessidades dos usuários, as restrições técnicas ou qualquer outra informação relevante para o desenvolvimento do software. Essas premissas são usadas como base para definir os requisitos do sistema e ajudam a orientar o desenvolvimento do software para atender às expectativas e necessidades dos stakeholders.}
+
+
+\subsubsection*{Disponibilidade de Acesso à Internet}
+Para utilizar o Sistema de Emissão de Pedidos, é necessário acesso à internet para acessar a aplicação web.
+
+\subsubsection*{Equipamentos Compatíveis}
+Os usuários devem possuir dispositivos compatíveis, como computadores, tablets ou smartphones, para acessar o sistema.
+
+\subsubsection*{Treinamento dos Usuários}
+Os usuários serão treinados no uso do sistema antes de sua implantação para garantir uma transição suave e eficaz.
+
+\subsubsection*{Backup dos Dados}
+Será realizado um backup regular dos dados do sistema para evitar perdas de dados em caso de falhas ou incidentes.
+
+\subsubsection*{Atualizações de Segurança}
+O sistema receberá atualizações regulares de segurança para garantir a proteção contínua dos dados contra ameaças cibernéticas.
+
+\subsubsection*{Suporte Técnico}
+Um serviço de suporte técnico estará disponível para auxiliar os usuários em caso de problemas ou dúvidas relacionadas ao sistema.
+
+\subsubsection*{Colaboração dos Usuários}
+É esperado que os usuários colaborem ativamente no uso do sistema, fornecendo feedback e reportando quaisquer problemas encontrados durante o uso.
